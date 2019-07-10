@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:belajar_parsing_json/ui/random_user/random_user_ui.dart';
 import 'package:belajar_parsing_json/ui/json_placeholder/placeholder_ui.dart';
+import 'package:belajar_parsing_json/ui/pokemon/pokemon_ui.dart';
 
 class ApiEndPointPage extends StatefulWidget {
   final String appBarTitle;
@@ -28,6 +29,8 @@ class _ApiEndPointPageState extends State<ApiEndPointPage> {
         return PlaceholderUi();
       case "Random User":
         return RandomUserUi();
+      case "Pokemon":
+        return PokemonUi();
     }
   }
 }
