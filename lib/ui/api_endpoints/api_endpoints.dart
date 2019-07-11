@@ -3,6 +3,7 @@ import 'package:belajar_parsing_json/ui/random_user/random_user_ui.dart';
 import 'package:belajar_parsing_json/ui/json_placeholder/placeholder_ui.dart';
 import 'package:belajar_parsing_json/ui/pokemon/pokemon_ui.dart';
 import 'package:belajar_parsing_json/ui/city_bike/city_bike_ui.dart';
+import 'package:belajar_parsing_json/ui/sportdb/sportdb_ui.dart';
 
 class ApiEndPointPage extends StatefulWidget {
   final String appBarTitle;
@@ -34,6 +35,8 @@ class _ApiEndPointPageState extends State<ApiEndPointPage> {
         return PokemonUi();
       case "City Bike":
         return CityBikeUi();
+      case "SportDB":
+        return SportdbUi();
     }
   }
 }
